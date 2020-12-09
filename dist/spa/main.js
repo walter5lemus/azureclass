@@ -742,7 +742,8 @@ const routes = [
     { path: 'heroes', component: _components_heroes_heroes_component__WEBPACK_IMPORTED_MODULE_4__["HeroesComponent"] },
     { path: 'heroe/:id', component: _components_heroe_heroe_component__WEBPACK_IMPORTED_MODULE_5__["HeroeComponent"] },
     { path: 'search/:nombre', component: _components_search_search_component__WEBPACK_IMPORTED_MODULE_6__["SearchComponent"] },
-    { path: '', redirectTo: 'home', pathMatch: 'full' }
+    { path: '', pathMatch: 'full', redirectTo: 'home' },
+    { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 class AppRoutingModule {
 }
